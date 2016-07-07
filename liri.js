@@ -6,30 +6,25 @@ var request = require('request');
 var params = process.argv.slice(2);
 var welcomeMsg = 
   "\r\n" +
-  "Hey there! I am LIRI. I can give you song information, movie information, a person's latest tweets, or do something for you."  + "\r\n\r\n" +
+  "Hi there! I am LIRI. I can give you song information, movie information, a person's latest tweets, or do something for you."  + "\r\n\r\n" +
   "What would you like me to do?" + "\r\n\r\n" +
   "Type one of the following: " + "\r\n\r\n" +
-  "node liri.js tweets 'twitter handle'" + "\r\n\r\n" + 
-  "node liri.js song 'song name'" + "\r\n\r\n" + 
-  "node liri.js movie 'movie name'" + "\r\n\r\n" +
-  "node liri.js do" + "\r\n";
+  "node liri tweets 'twitter handle'" + "\r\n\r\n" + 
+  "node liri song 'song name'" + "\r\n\r\n" + 
+  "node liri movie 'movie name'" + "\r\n\r\n" +
+  "node liri do" + "\r\n";
 var defaultMsg = 
   "\r\n" +
-  "Invalid response. Please try again." + "\r\n\r\n" +
-  "What would you like me to do?" + "\r\n\r\n" +
+  "Invalid response." + "\r\n\r\n" +
   "Type one of the following: " + "\r\n\r\n" +
-  "node liri.js tweets 'twitter handle'" + "\r\n\r\n" + 
-  "node liri.js song 'song name'" + "\r\n\r\n" + 
-  "node liri.js movie 'movie name'" + "\r\n\r\n" +
-  "node liri.js do" + "\r\n";
+  "node liri tweets 'twitter handle'" + "\r\n\r\n" + 
+  "node liri song 'song name'" + "\r\n\r\n" + 
+  "node liri movie 'movie name'" + "\r\n\r\n" +
+  "node liri do" + "\r\n";
 
 switch(params[0]) {
 
   case undefined: // User enters nothing after 'node liri.js'
-  case "hello":
-  case "hi":
-  case "hey":
-  case "hey liri":
     console.log(welcomeMsg);
     break;
 
@@ -71,7 +66,8 @@ switch(params[0]) {
   default:
     console.log(defaultMsg);
 
-} // End Switch Statement
+} 
+// End Switch Statement
 
 function twitterCall() {
   var client = new twitter({
@@ -97,7 +93,8 @@ function twitterCall() {
       logData(twitterResults);
     }
   })
-}; // End twitterCall()
+}; 
+// End twitterCall()
 
 function spotifyCall(songName) {
   spotify.search({ type: 'track', query: songName }, function(error, data) {
@@ -114,7 +111,8 @@ function spotifyCall(songName) {
     console.log(spotifyResults);
     logData(spotifyResults);
   })
-}; // End spotifyCall()
+}; 
+// End spotifyCall()
 
 function movieCall() {
   var omdbApi = 'http://www.omdbapi.com/?t=';
@@ -142,7 +140,8 @@ function movieCall() {
       logData(movieResults);
     }
   })
-}; // End movieCall()
+}; 
+// End movieCall()
 
 function doCall() {
   fs.readFile("./random.txt", "utf8", function(error, data) {
@@ -153,7 +152,8 @@ function doCall() {
     data = data.split(',');
     spotifyCall(data[1]);
   })
-}; // End doCall()
+}; 
+// End doCall()
 
 function logData(logEntry) {
   fs.appendFile("./log.txt", logEntry, (error) => {
@@ -161,4 +161,5 @@ function logData(logEntry) {
       throw error;
     }
   });
-} // End logData()
+} 
+// End logData()
