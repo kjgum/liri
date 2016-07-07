@@ -38,3 +38,78 @@ Track Name: I Want It That Way
 Album: The Hits--Chapter One
 Preview Link: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6
 
+Artist: Adele
+Track Name: Hello
+Album: Hello
+Preview Link: https://p.scdn.co/mp3-preview/0b90429fd554bad6785faa2b8931d613db4a0ee4
+
+Title: Fried
+Year: 2014–
+Country: UK
+Language: English
+Rated: N/A
+Released: 20 Jul 2014
+Genre: Comedy
+Director: N/A
+Writer: Harry Williams, Jack Williams
+Actors: Mandeep Dhillon, William Melling, Katy Wix, Imran Yusuf
+Plot: Fried follows the staff in the struggling Croydon branch of a low rent fast food chain, "Seriously Fried Chicken". We follow the group as they navigate the greasy world of nugget vending ...
+IMDB Rating: 5.6
+Rotten Tomatoes Rating: N/A
+Rotten Tomato URL: N/A
+
+Title: undefined
+Year: undefined
+Country: undefined
+Language: undefined
+Rated: undefined
+Released: undefined
+Genre: undefined
+Director: undefined
+Writer: undefined
+Actors: undefined
+Plot: undefined
+IMDB Rating: undefined
+Rotten Tomatoes Rating: undefined
+Rotten Tomato URL: undefined
+
+Title: Finding Nemo
+Year: 2003
+Country: USA
+Language: English
+Rated: G
+Released: 30 May 2003
+Genre: Animation, Adventure, Comedy
+Director: Andrew Stanton, Lee Unkrich
+Writer: Andrew Stanton (original story by), Andrew Stanton (screenplay), Bob Peterson (screenplay), David Reynolds (screenplay)
+Actors: Albert Brooks, Ellen DeGeneres, Alexander Gould, Willem Dafoe
+Plot: After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.
+IMDB Rating: 8.1
+Rotten Tomatoes Rating: 8.7
+Rotten Tomato URL: http://www.rottentomatoes.com/m/finding_nemo/
+
+Title: Fried Green Tomatoes
+Year: 1991
+Country: USA
+Language: English
+Rated: PG-13
+Released: 24 Jan 1992
+Genre: Drama
+Director: Jon Avnet
+Writer: Fannie Flagg (novel), Fannie Flagg (screenplay), Carol Sobieski (screenplay)
+Actors: Kathy Bates, Mary Stuart Masterson, Mary-Louise Parker, Jessica Tandy
+Plot: A housewife who is unhappy with her life befriends an old lady in a nursing home and is enthralled by the tales she tells of people she used to know.
+IMDB Rating: 7.6
+Rotten Tomatoes Rating: 6.6
+Rotten Tomato URL: http://www.rottentomatoes.com/m/fried_green_tomatoes/
+
+Artist: AC/DC
+Track Name: Highway to Hell
+Album: Highway to Hell
+Preview Link: https://p.scdn.co/mp3-preview/aa4f9186e0c3f4436bb40572a63862db80d7ef2d
+
+Artist: Led Zeppelin
+Track Name: Communication Breakdown
+Album: Mothership (Remastered)
+Preview Link: https://p.scdn.co/mp3-preview/8a6fc1ede9e37aea41d522f753082f7dfd0eb346
+
