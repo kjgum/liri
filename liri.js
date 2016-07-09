@@ -7,16 +7,14 @@ var params = process.argv.slice(2);
 var welcomeMsg = 
   "\r\n" +
   "Hi there! I am LIRI. I can give you song information, movie information, a person's latest tweets, or do something for you."  + "\r\n\r\n" +
-  "What would you like me to do?" + "\r\n\r\n" +
-  "Type one of the following: " + "\r\n\r\n" +
+  "what would you like me to do?" + "\r\n\r\n" +
   "node liri tweets 'twitter handle'" + "\r\n\r\n" + 
   "node liri song 'song name'" + "\r\n\r\n" + 
   "node liri movie 'movie name'" + "\r\n\r\n" +
   "node liri do" + "\r\n";
 var defaultMsg = 
   "\r\n" +
-  "Invalid response." + "\r\n\r\n" +
-  "Type one of the following: " + "\r\n\r\n" +
+  "invalid response." + "\r\n\r\n" +
   "node liri tweets 'twitter handle'" + "\r\n\r\n" + 
   "node liri song 'song name'" + "\r\n\r\n" + 
   "node liri movie 'movie name'" + "\r\n\r\n" +
@@ -24,7 +22,7 @@ var defaultMsg =
 
 switch(params[0]) {
 
-  case undefined: // User enters nothing after 'node liri.js'
+  case undefined: 
     console.log(welcomeMsg);
     break;
 
@@ -67,7 +65,7 @@ switch(params[0]) {
     console.log(defaultMsg);
 
 } 
-// End Switch Statement
+// end switch statement
 
 function twitterCall() {
   var client = new twitter({
@@ -94,7 +92,7 @@ function twitterCall() {
     }
   })
 }; 
-// End twitterCall()
+// twitterCall()
 
 function spotifyCall(songName) {
   spotify.search({ type: 'track', query: songName }, function(error, data) {
@@ -112,7 +110,7 @@ function spotifyCall(songName) {
     logData(spotifyResults);
   })
 }; 
-// End spotifyCall()
+// spotifyCall()
 
 function movieCall() {
   var omdbApi = 'http://www.omdbapi.com/?t=';
@@ -141,7 +139,7 @@ function movieCall() {
     }
   })
 }; 
-// End movieCall()
+// movieCall()
 
 function doCall() {
   fs.readFile("./random.txt", "utf8", function(error, data) {
@@ -153,7 +151,7 @@ function doCall() {
     spotifyCall(data[1]);
   })
 }; 
-// End doCall()
+// doCall()
 
 function logData(logEntry) {
   fs.appendFile("./log.txt", logEntry, (error) => {
@@ -162,4 +160,4 @@ function logData(logEntry) {
     }
   });
 } 
-// End logData()
+// logData()
